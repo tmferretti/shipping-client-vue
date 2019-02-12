@@ -1,10 +1,15 @@
 <template>
   <div id="app">
+    <b-nav tabs>
+      <b-nav-item to='/vendors' active>Vendors</b-nav-item>
+      <b-nav-item to='/shipment/new'>New Shipment</b-nav-item>
+    </b-nav>
     <router-view/>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'App'
 }

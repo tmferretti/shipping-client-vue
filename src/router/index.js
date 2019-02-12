@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Vendors from '@/components/Vendors'
+import VendorsList from '@/components/VendorsList'
+import VendorsShow from '@/components/VendorsShow'
 
 Vue.use(Router)
 
@@ -14,8 +15,13 @@ export default new Router({
     },
     {
       path: '/vendors',
-      name: 'Vendors',
-      component: Vendors
+      name: 'VendorsList',
+      component: VendorsList
+    },
+    {
+      path: '/vendors/:id',
+      name: 'VendorsShow',
+      component: VendorsShow
     }
   ]
 })
